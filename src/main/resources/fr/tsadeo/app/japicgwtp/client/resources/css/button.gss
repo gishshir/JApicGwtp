@@ -1,0 +1,31 @@
+@def IMG_SCAN resourceUrl("imgResScan");
+@def IMG_EDIT resourceUrl("imgResEdit");
+@def IMG_CREATE resourceUrl("imgResCreate");
+@def IMG_DELETE resourceUrl("imgResDelete");
+
+
+.buttonAction:hover,
+.buttonAction {
+		background-color: transparent;
+		border-style: none;
+        width: 25px;
+        height: 25px;
+}
+
+.buttonCreateSite {
+    margin-left: 10px;
+    margin-top: 5px;
+    background: IMG_CREATE no-repeat scroll center center rgba(0, 0, 0, 0);
+}
+
+.backgroundScanSite{
+	background: IMG_SCAN no-repeat scroll center center rgba(0, 0, 0, 0);
+}
+
+.backgroundEdit{
+	background: IMG_EDIT no-repeat scroll center center rgba(0, 0, 0, 0);
+}
+
+.backgroundDelete{
+	background: IMG_DELETE no-repeat scroll center center rgba(0, 0, 0, 0);
+}

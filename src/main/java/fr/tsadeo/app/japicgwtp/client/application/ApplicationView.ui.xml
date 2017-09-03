@@ -1,0 +1,30 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g='urn:import:com.google.gwt.user.client.ui'
+    xmlns:b="urn:import:org.gwtbootstrap3.client.ui">
+    
+	<ui:with field="res"
+		type="fr.tsadeo.app.japicgwtp.client.resources.AppResources" />
+
+
+	<g:VerticalPanel width="100%">
+		<g:HTMLPanel>
+			<div ui:field="loadingMessage"
+				style="position:absolute; top:0; left:0; background-color:yellow;">
+				Loading...
+			</div>
+		</g:HTMLPanel>
+
+		<g:HTMLPanel>
+			<header>
+				<h1>Java API Collector</h1>
+			</header>
+		</g:HTMLPanel>
+
+		<g:SimplePanel ui:field="menu" />
+		<b:Container fluid="true">
+			<g:SimplePanel ui:field="body" />
+		</b:Container>
+	</g:VerticalPanel>
+
+</ui:UiBinder>
